@@ -42,15 +42,11 @@ public final class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         startAPICall("192.17.96.8");
-        configureStartButton();
-    }
-    /** Start button. */
-    private void configureStartButton() {
         Button start = (Button) findViewById(R.id.button_start);
         start.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(final View view) {
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                Intent myIntent = new Intent(view.getContext(), SecondActivity.class);
+                startActivityForResult(myIntent, 0);
             }
         });
     }
