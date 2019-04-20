@@ -7,4 +7,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="99dp"
+            android:layout_height="54dp"
+            android:text="Start"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="162dp" />
+    </android.support.constraint.ConstraintLayout>
 </LinearLayout>
